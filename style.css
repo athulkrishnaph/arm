@@ -1,0 +1,148 @@
+body{
+    margin: 0px;
+    padding: 0%;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    text-align: center;
+    background-color: #ff6c04;
+    margin-top: -16px;
+    width: 100%;
+    height: 47px;
+    padding-top: 10px;
+    color: white;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0px 110px;
+    height: 75px;
+    font-size: 17px;
+}
+.navicon{
+    display: inline;
+    padding: 5px 20px;
+}
+.navicon>a{
+    text-decoration: none;
+    color: black;
+}
+.navicon>a:hover{
+    text-decoration: underline;
+}
+.logo{
+    width: 170px;
+    margin-right: 100px;
+}
+.navlist{
+    margin-left: -100px;
+}
+.icons3 i{
+    font-size: 23px;
+    padding-left: 13px;
+    
+}
+#cart{
+    font-size: 28px;
+}
+.section{
+    width: 100%;
+}
+.section1image img{
+    width: 1060px;
+    
+}
+.section1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#section1head{
+    font-weight: 400;
+}
+.section1content{
+    margin-right: 70px;
+}
+.section1content>h1{
+    font-weight: 300;
+    font-size: 35px
+}
+.section1content>button{
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 50px;
+}
+.section2content{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.section2image>img{
+    width: 300px;
+}
+.section2heading{
+    height: 150px;
+}
+.section2heading>h1{
+    padding-top: 60px;
+    margin-left: 110px;
+    font-size: 35px;
+    font-weight: 450;
+}
+.section2image s{
+    margin-left: 10px;
+}
+.section2image button{
+    width: 300px;
+    height: 50px;
+    color: white;
+    background-color: black;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+    
+}
+.slider{
+    margin: 0% 10px;
+    width: 80px;
+    /* background-color: black; */
+    height: 7px;
+    border-radius: 5px;
+}
+.slider-track{
+    background-color: lightgrey;
+    height: 7px;
+    border-radius: 5px;
+    position: relative;
+    width: 80px;
+}
+.slider-thumb{
+    background-color: black;
+    height: 7px;
+    position: absolute;
+    width: 40px;
+    border-radius: 5px;
+}
+#leftarrow{
+    color: grey;
+}
+#arrowbutton>button{
+    background-color: white;
+    color: black;
+    outline: 1px black;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    
+}
+#arrowbutton{
+    display: flex;
+    justify-content: center;
+}
