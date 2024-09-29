@@ -171,3 +171,63 @@ a:hover{
 .section6image>img{
     width: 60px;
 }
+.section7image>img{
+    width: 600px;
+    
+}
+.section7image{
+    text-align: center;
+    background-color: #f2efec;
+    height: 870px;
+}
+.section7image button{
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    outline: 1px black;
+}
+.section8{
+    margin-top: 110px;
+    padding: 80px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: #1b1a1a;
+    color: rgb(255, 255, 255);
+    border-bottom: solid rgb(255, 255, 255);
+    
+}
+.sectionparts{
+    padding: 0px 100px;
+    width: 100%;
+    /* border: solid; */
+}
+.section8 a{
+    display: block;
+    color: rgb(255, 255, 255);
+    line-height: 1.8;
+}
+.section8 a:hover{
+    text-decoration: none;
+}
+.sectionpart3 a{
+    text-decoration: underline;
+    display: inline;
+}
+.sectionpart3 a:hover{
+    text-decoration: underline;
+}
+.sectionpart3 i{
+    font-size: 25px;
+}
+
+footer{
+    margin-top: -18.5px;
+    background-color: #1b1a1a;
+    color:  rgb(255, 255, 255);
+    height: 100px;
+}
+footer p{
+    margin-left: 100px;
+    padding-top: 25px;
+    
+}
