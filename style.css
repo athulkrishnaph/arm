@@ -25,11 +25,11 @@ body{
     display: inline;
     padding: 5px 20px;
 }
-.navicon>a{
+a{
     text-decoration: none;
     color: black;
 }
-.navicon>a:hover{
+a:hover{
     text-decoration: underline;
 }
 .logo{
@@ -75,27 +75,27 @@ body{
     width: 150px;
     height: 50px;
 }
-.section2content{
+.sectioncontent{
     display: flex;
     justify-content: center;
     gap: 30px;
 }
-.section2image>img{
+.sectionimage>img{
     width: 300px;
 }
-.section2heading{
+.sectionheading{
     height: 150px;
 }
-.section2heading>h1{
+.sectionheading>h1{
     padding-top: 60px;
     margin-left: 110px;
     font-size: 35px;
     font-weight: 450;
 }
-.section2image s{
+.sectionimage s{
     margin-left: 10px;
 }
-.section2image button{
+.sectionimage button{
     width: 300px;
     height: 50px;
     color: white;
@@ -145,4 +145,29 @@ body{
 #arrowbutton{
     display: flex;
     justify-content: center;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+.b5{
+    margin-top: 35px;
+}
+.section6{
+    margin-top: 150px;
+    text-align: center;
+}
+.section6head>h1{
+    letter-spacing: .5px;
+    word-spacing: 7px;
+    font-weight: 500;
+}
+.section6image{
+    margin-top: 100px;
+    padding: 0% 20px;
+}
+.section6image>img{
+    width: 60px;
 }
