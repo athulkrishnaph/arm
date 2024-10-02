@@ -29,11 +29,25 @@ body{
 }
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding:  0px 120px;
+    /* padding:  0px 120px; */
+    width: 100%;
     height: 75px;
     font-size: 17px;
+    /* border: solid 2px; */
+}
+#check{
+    display: none;
+    
+}
+.labelicons{
+    position: absolute;
+    right: 30px;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    
 }
 .navicon{
     display: inline;
@@ -70,6 +84,7 @@ a:hover{
 }
 .section1{
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -98,6 +113,7 @@ a:hover{
 .sectionimage>img{
     width: 300px;
 }
+
 .sectionheading{
     height: 150px;
 }
@@ -106,6 +122,7 @@ a:hover{
     margin-left: 110px;
     font-size: 35px;
     font-weight: 450;
+    
 }
 .sectionimage s{
     margin-left: 10px;
@@ -116,7 +133,13 @@ a:hover{
     color: white;
     background-color: black;
 }
-
+.zoom img{
+    width: 300px;
+    transition: width 1s;
+}
+.zoom img:hover{
+    width: 400px;
+}
 .arrow{
     display: flex;
     justify-content: center;
@@ -161,12 +184,48 @@ a:hover{
     display: flex;
     justify-content: center;
 }
+
 .flex{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     gap: 20px;
+    height: 275px;
+    
 }
+.flex img{
+    height: 225px;
+    transition: height .5s;
+}
+.flex img:hover{
+    height:205px
+}
+.flex:has(#img32:hover) #name32{
+    text-decoration: underline;
+}
+.flex:has(#img31:hover) #name31{
+    text-decoration: underline;
+}
+.flex:has(#img33:hover) #name33{
+    text-decoration: underline;
+}
+.flex:has(#img34:hover) #name34{
+    text-decoration: underline;
+}
+.flex:has(#img42:hover) #name42{
+    text-decoration: underline;
+}
+.flex:has(#img41:hover) #name41{
+    text-decoration: underline;
+}
+.flex:has(#img43:hover) #name43{
+    text-decoration: underline;
+}
+.flex:has(#img44:hover) #name44{
+    text-decoration: underline;
+}
+
 .b5{
     margin-top: 35px;
 }
@@ -207,7 +266,7 @@ a:hover{
     display: flex;
     justify-content: center;
     background-color: #1b1a1a;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.642);
     border-bottom: solid rgb(255, 255, 255);
     
 }
@@ -218,7 +277,7 @@ a:hover{
 }
 .section8 a{
     display: block;
-    color: rgb(255, 255, 255);
+    color: rgba(255, 255, 255, 0.642);
     line-height: 1.8;
 }
 .section8 a:hover{
@@ -233,12 +292,13 @@ a:hover{
 }
 .sectionpart3 i{
     font-size: 25px;
+    color: rgba(255, 255, 255, 0.642);
 }
 
 footer{
     margin-top: -18.5px;
     background-color: #1b1a1a;
-    color:  rgb(255, 255, 255);
+    color:  rgba(255, 255, 255, 0.642);
     height: 100px;
 }
 footer p{
@@ -246,3 +306,108 @@ footer p{
     padding-top: 25px;
     
 }
+.customer{
+    overflow-x: scroll;
+    width: 100%;
+    height: 340px;
+    display: flex;
+    gap: 60px;
+    justify-content: space-evenly;
+    color: rgba(0, 0, 0, 0.597);
+}
+.customer #span1,i,h3{
+    color: black;
+}
+.customercontent{
+    border: solid 1px rgba(0, 0, 0, 0.615);
+    padding: 20px;
+    margin-bottom: 10px;
+
+}
+.wcs{
+    display: flex;
+    flex-direction: column;
+    
+}
+#span1{
+    font-weight: 600;
+}
+#span3{
+    float: right;
+}
+.wcsimg{
+    width: 35px;
+}
+.customer a{
+    display: inline-block;
+    width: 350px;
+    margin-top: 120px;
+    /* margin-left: 10px; */
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    align-items: center;
+    
+
+}
+.customer i{
+    margin-top: 8px;
+    font-size: 20px;
+}
+.customer a span{
+    color: black;
+   
+
+    
+}
+.section7content{
+    display: flex;
+    flex-direction: column;
+}
+.wcsbottom{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.customer::-webkit-scrollbar{
+    width: 1px;
+    border-radius: 10px;
+    height: 10px;
+}
+.customer::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.244);
+   
+}
+.customer::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 0, 0);
+   
+
+}
+@media(max-width:760px){
+    .navicon{
+        display: none;
+    }
+    .labelicons{
+        display: flex;
+    }
+    #closeicon{
+        display: none;
+    }
+    #check:checked~.labelicons #menuicon{
+        display: none;
+    }
+    #check:checked~.labelicons #closeicon{
+        display: block;
+    }
+    #cart{
+        display: none;
+    }
+    .nav{
+      display: flex;
+      justify-content: center;
+        
+    }
+}
+    
+    
