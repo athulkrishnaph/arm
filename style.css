@@ -1,27 +1,68 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+
+}
 body{
     margin: 0px;
     padding: 0%;
     font-family: "Roboto", sans-serif;
-    box-sizing: border-box;
+   
+    
 }
-.header{
-    text-align: center;
+header{
+    
     background-color: #ff6c04;
     /* margin-top: -16px; */
     width: 100%;
+
     /* border: solid; */
-    height: 30px;
-    padding-top: 11.5px;
+    height: 4vh;
+    overflow: hidden;
+    /* padding-top: 11.5px; */
+    
     
     
 }
-.header>a{
+
+ .header{
+    display: flex;
+    /* align-items: center; */
+    width: 200%;
+    height: 4vh;
+    background-color: #ff6c04;
+    animation: train 6s infinite;
+
+ }
+ @keyframes train{
+    0%{
+        margin-left:0%;
+    }
+    40%{
+        margin-left:0%;
+    }
+    60%{
+        margin-left:-100%;
+    }
+    100%{
+        margin-left:-100%;
+    }
+}
+.train{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.train>a{
     color: white;
     /* margin-top: 50%; */
     /* border: solid; */
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 1.1;
+    
     
 }
 .header>a:hover{
@@ -35,6 +76,8 @@ body{
     width: 100%;
     height: 75px;
     font-size: 17px;
+    background-color: white;
+    transition: background-color .7s;
     /* border: solid 2px; */
 }
 #check{
@@ -47,6 +90,7 @@ body{
     font-size: 30px;
     display: none;
     cursor: pointer;
+    
     
 }
 .navicon{
@@ -78,13 +122,18 @@ a:hover{
 .section{
     width: 100%;
 }
+.section1image{
+    width: 70%;
+}
 .section1image img{
-    width: 1060px;
+    width: 100%;
     
 }
 .section1{
     display: flex;
     flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    gap: 3%;
     justify-content: space-between;
     align-items: center;
 }
@@ -92,7 +141,8 @@ a:hover{
     font-weight: 400;
 }
 .section1content{
-    margin-right: 70px;
+    /* margin-right: 70px; */
+    width: 30%;
 }
 .section1content>h1{
     font-weight: 300;
@@ -101,19 +151,22 @@ a:hover{
 .section1content>button{
     background-color: black;
     color: white;
+    border: solid black;
     width: 150px;
     height: 50px;
+    transition: background-color 0.5s,color 0.5s,border 0.5s;
     
 }
 .sectioncontent{
     display: flex;
     justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
     gap: 30px;
 }
 .sectionimage>img{
     width: 300px;
 }
-
 .sectionheading{
     height: 150px;
 }
@@ -132,6 +185,9 @@ a:hover{
     height: 50px;
     color: white;
     background-color: black;
+    border: black solid;
+    transition: background-color 0.5s,color 0.5s,border 0.5s;
+
 }
 .zoom img{
     width: 300px;
@@ -158,7 +214,7 @@ a:hover{
     background-color: lightgrey;
     height: 7px;
     border-radius: 5px;
-    position: relative;
+    /* position: relative; */
     width: 80px;
 }
 .slider-thumb{
@@ -178,6 +234,7 @@ a:hover{
     width: 200px;
     height: 50px;
     align-items: center;
+    transition: background-color 0.5s,color 0.5s,outline 0.5s;
     
 }
 #arrowbutton{
@@ -189,6 +246,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: nowrap;
     text-align: center;
     gap: 20px;
     height: 275px;
@@ -247,27 +305,30 @@ a:hover{
 }
 .section7image>img{
     width: 600px;
+    outline: 1px solid rgba(200, 191, 191, 0.642);
     
 }
 .section7image{
     text-align: center;
-    background-color: #f2efec;
+    /* background-color: #f2efec; */
     height: 870px;
+    width: 100%;
 }
 .section7image button{
     width: 200px;
     height: 50px;
     font-size: 17px;
-    outline: 1px black;
+    /* outline: 1px black; */
 }
 .section8{
-    margin-top: 110px;
+    /* margin-top: 110px; */
     padding: 80px 0px;
     display: flex;
     justify-content: center;
+    flex-wrap: nowrap;
     background-color: #1b1a1a;
     color: rgba(255, 255, 255, 0.642);
-    border-bottom: solid rgb(255, 255, 255);
+    border-bottom:solid rgba(255, 255, 255, 0.642);
     
 }
 .sectionparts{
@@ -292,11 +353,11 @@ a:hover{
 }
 .sectionpart3 i{
     font-size: 25px;
-    color: rgba(255, 255, 255, 0.642);
+    color: rgba(255, 255, 255, 0.262);
 }
 
 footer{
-    margin-top: -18.5px;
+    margin-top: -17.6px;
     background-color: #1b1a1a;
     color:  rgba(255, 255, 255, 0.642);
     height: 100px;
@@ -368,11 +429,12 @@ footer p{
 .wcsbottom{
     display: flex;
     justify-content: center;
-    gap: 40px;
+    flex-wrap: nowrap;
+    padding: 8% 8% 0% 8%;
+    /* border: 2px solid; */
 }
 .customer::-webkit-scrollbar{
     width: 1px;
-    border-radius: 10px;
     height: 10px;
 }
 .customer::-webkit-scrollbar-track{
@@ -381,15 +443,44 @@ footer p{
 }
 .customer::-webkit-scrollbar-thumb{
     background-color: rgb(0, 0, 0);
+    border-radius: 30px;
    
 
 }
-@media(max-width:760px){
-    .navicon{
+@media(max-width:1262px){
+    .wcsbottom{
+        flex-wrap: wrap;
+    }
+    .section8{
+        flex-wrap: wrap;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .section1{
+        flex-wrap: wrap;
+    }
+    .sectioncontent{
+        flex-wrap: wrap;
+    }
+    .logo{
+        margin-left: 35%;
+    }
+    #navicons{
         display: none;
+        margin: 0%;
+        
+    }
+    .icons3{
+        margin-left: 35vw;
+        position: absolute;
+        right: 2%;
     }
     .labelicons{
         display: flex;
+        position: absolute;
+        left: 2%;
+        
     }
     #closeicon{
         display: none;
@@ -399,15 +490,104 @@ footer p{
     }
     #check:checked~.labelicons #closeicon{
         display: block;
+        position: absolute;
+        left: 19%;
+        margin-top: -60px;
+        z-index: 100;
     }
-    #cart{
-        display: none;
+    #check:checked~.navlist .navicon{
+        /* border-bottom: 1px solid; */
     }
-    .nav{
-      display: flex;
-      justify-content: center;
+    #check:checked~.navlist #navicons{
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        background-color: rgba(125, 125, 125, 0.966);
+        
+        height: 100vh;
+        justify-content: start;
+        gap: 5%;
+        width: 25%;
+        /* margin-top: 30px; */
         
     }
-}
+
     
+
+    /* #cart{
+        display: none;
+    } */
+    .nav{
+      display: flex;
+      /* justify-content: space-evenly; */
+        
+    }
+    .navicon{
+        font-size: 12px;
+    }
+}
+@media(max-width:760px){
+    
+    
+    .icons3{
+        margin-left: 35%;
+    }
+    .wcsbottom{
+        flex-wrap: wrap;
+    }
+    .section8{
+        flex-wrap: wrap;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .section1{
+        flex-wrap: wrap;
+    }
+    .sectioncontent{
+        flex-wrap: wrap;
+    }
+    .section1image{
+        width: 100vw;
+    }
+
+  
+}
+@media(max-width:560px){
+    .logo{
+        margin-left: 20%;
+    }
+}
+
+.section5image img,.section2image img{
+    width: 300px;
+    transition: width .7s;
+}
+.section5image img:hover,.section2image img:hover{
+    width: 320px;
+}
+/* .section2image img{
+    width: 300px;
+    transition: width .7s;
+} */
+/* .section2image img:hover{
+    width: 320px;
+} */
+
+.section1 button:hover,.section2 button:hover,.section5 button:hover{
+    background-color: white;
+    border: solid  rgba(74, 72, 72, 0.642);
+    color: black;
+}
+#arrowbutton>button:hover{
+    /* outline: 1px solid  rgba(74, 72, 72, 0.642); */
+    background-color: black;
+    color: white;
+}
+.nav:hover{
+    background-color: rgba(74, 72, 72, 0.158);
+}
     
