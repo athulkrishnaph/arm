@@ -7,8 +7,6 @@ body{
     margin: 0px;
     padding: 0%;
     font-family: "Roboto", sans-serif;
-   
-    
 }
 header{
     
@@ -134,7 +132,7 @@ a:hover{
     flex-wrap: nowrap;
     flex-wrap: nowrap;
     gap: 3%;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
 #section1head{
@@ -304,7 +302,7 @@ a:hover{
     width: 60px;
 }
 .section7image>img{
-    width: 600px;
+    width: 100%;
     outline: 1px solid rgba(200, 191, 191, 0.642);
     
 }
@@ -313,6 +311,7 @@ a:hover{
     /* background-color: #f2efec; */
     height: 870px;
     width: 100%;
+    
 }
 .section7image button{
     width: 200px;
@@ -451,6 +450,9 @@ footer p{
     .wcsbottom{
         flex-wrap: wrap;
     }
+    p br{
+        display: none;
+    }
     .section8{
         flex-wrap: wrap;
     }
@@ -459,9 +461,11 @@ footer p{
     }
     .section1{
         flex-wrap: wrap;
+        justify-content: center;
     }
     .sectioncontent{
         flex-wrap: wrap;
+        width: 100%;
     }
     .logo{
         margin-left: 35%;
