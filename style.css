@@ -1,7 +1,5 @@
 *{
     box-sizing: border-box;
-    /* border: 1px solid red; */
-
 }
 body{
     margin: 0px;
@@ -9,23 +7,13 @@ body{
     font-family: "Roboto", sans-serif;
 }
 header{
-    
     background-color: #ff6c04;
-    /* margin-top: -16px; */
     width: 100%;
-
-    /* border: solid; */
     height: 4vh;
     overflow: hidden;
-    /* padding-top: 11.5px; */
-    
-    
-    
 }
-
  .header{
     display: flex;
-    /* align-items: center; */
     width: 200%;
     height: 4vh;
     background-color: #ff6c04;
@@ -52,16 +40,11 @@ header{
     align-items: center;
     width: 50%;
 }
-
 .train>a{
     color: white;
-    /* margin-top: 50%; */
-    /* border: solid; */
     font-size: 14px;
     font-weight: 400;
-    letter-spacing: 1.1;
-    
-    
+    letter-spacing: 1.1;  
 }
 .header>a:hover{
     text-decoration: none;
@@ -70,26 +53,21 @@ header{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* padding:  0px 120px; */
     width: 100%;
     height: 75px;
     font-size: 17px;
     background-color: white;
     transition: background-color .7s;
-    /* border: solid 2px; */
 }
 #check{
-    display: none;
-    
+    display: none;  
 }
 .labelicons{
     position: absolute;
     right: 30px;
     font-size: 30px;
     display: none;
-    cursor: pointer;
-    
-    
+    cursor: pointer;  
 }
 .navicon{
     display: inline;
@@ -112,7 +90,6 @@ a:hover{
 .icons3 i{
     font-size: 23px;
     padding-left: 13px;
-    
 }
 #cart{
     font-size: 28px;
@@ -125,21 +102,18 @@ a:hover{
 }
 .section1image img{
     width: 100%;
-    
 }
 .section1{
     display: flex;
     flex-wrap: nowrap;
     flex-wrap: nowrap;
     gap: 3%;
-    /* justify-content: space-between; */
     align-items: center;
 }
 #section1head{
     font-weight: 400;
 }
 .section1content{
-    /* margin-right: 70px; */
     width: 30%;
 }
 .section1content>h1{
@@ -152,8 +126,7 @@ a:hover{
     border: solid black;
     width: 150px;
     height: 50px;
-    transition: background-color 0.5s,color 0.5s,border 0.5s;
-    
+    transition: background-color 0.5s,color 0.5s,border 0.5s; 
 }
 .sectioncontent{
     display: flex;
@@ -173,7 +146,6 @@ a:hover{
     margin-left: 110px;
     font-size: 35px;
     font-weight: 450;
-    
 }
 .sectionimage s{
     margin-left: 10px;
@@ -185,7 +157,6 @@ a:hover{
     background-color: black;
     border: black solid;
     transition: background-color 0.5s,color 0.5s,border 0.5s;
-
 }
 .zoom img{
     width: 300px;
@@ -199,12 +170,10 @@ a:hover{
     justify-content: center;
     align-items: center;
     margin: 60px;
-    
 }
 .slider{
     margin: 0% 10px;
     width: 80px;
-    /* background-color: black; */
     height: 7px;
     border-radius: 5px;
 }
@@ -212,7 +181,6 @@ a:hover{
     background-color: lightgrey;
     height: 7px;
     border-radius: 5px;
-    /* position: relative; */
     width: 80px;
 }
 .slider-thumb{
@@ -233,13 +201,11 @@ a:hover{
     height: 50px;
     align-items: center;
     transition: background-color 0.5s,color 0.5s,outline 0.5s;
-    
 }
 #arrowbutton{
     display: flex;
     justify-content: center;
 }
-
 .flex{
     display: flex;
     flex-direction: column;
@@ -247,8 +213,7 @@ a:hover{
     flex-wrap: nowrap;
     text-align: center;
     gap: 20px;
-    height: 275px;
-    
+    height: 275px;  
 }
 .flex img{
     height: 225px;
@@ -281,7 +246,6 @@ a:hover{
 .flex:has(#img44:hover) #name44{
     text-decoration: underline;
 }
-
 .b5{
     margin-top: 35px;
 }
@@ -303,37 +267,30 @@ a:hover{
 }
 .section7image>img{
     width: 100%;
-    outline: 1px solid rgba(200, 191, 191, 0.642);
-    
+    outline: 1px solid rgba(200, 191, 191, 0.642);   
 }
 .section7image{
     text-align: center;
-    /* background-color: #f2efec; */
     height: 870px;
-    width: 100%;
-    
+    width: 100%; 
 }
 .section7image button{
     width: 200px;
     height: 50px;
     font-size: 17px;
-    /* outline: 1px black; */
 }
 .section8{
-    /* margin-top: 110px; */
     padding: 80px 0px;
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
     background-color: #1b1a1a;
     color: rgba(255, 255, 255, 0.642);
-    border-bottom:solid rgba(255, 255, 255, 0.642);
-    
+    border-bottom:solid rgba(255, 255, 255, 0.642);  
 }
 .sectionparts{
     padding: 0px 100px;
     width: 100%;
-    /* border: solid; */
 }
 .section8 a{
     display: block;
@@ -354,7 +311,6 @@ a:hover{
     font-size: 25px;
     color: rgba(255, 255, 255, 0.262);
 }
-
 footer{
     margin-top: -17.6px;
     background-color: #1b1a1a;
@@ -364,7 +320,6 @@ footer{
 footer p{
     margin-left: 100px;
     padding-top: 25px;
-    
 }
 .customer{
     overflow-x: scroll;
@@ -382,12 +337,10 @@ footer p{
     border: solid 1px rgba(0, 0, 0, 0.615);
     padding: 20px;
     margin-bottom: 10px;
-
 }
 .wcs{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 #span1{
     font-weight: 600;
@@ -402,24 +355,18 @@ footer p{
     display: inline-block;
     width: 350px;
     margin-top: 120px;
-    /* margin-left: 10px; */
     text-decoration: none;
     display: flex;
     justify-content: left;
     gap: 10px;
     align-items: center;
-    
-
 }
 .customer i{
     margin-top: 8px;
     font-size: 20px;
 }
 .customer a span{
-    color: black;
-   
-
-    
+    color: black;  
 }
 .section7content{
     display: flex;
@@ -430,7 +377,6 @@ footer p{
     justify-content: center;
     flex-wrap: nowrap;
     padding: 8% 8% 0% 8%;
-    /* border: 2px solid; */
 }
 .customer::-webkit-scrollbar{
     width: 1px;
@@ -438,15 +384,12 @@ footer p{
 }
 .customer::-webkit-scrollbar-track{
     background-color: rgba(0, 0, 0, 0.244);
-   
 }
 .customer::-webkit-scrollbar-thumb{
     background-color: rgb(0, 0, 0);
     border-radius: 30px;
-   
-
 }
-@media(max-width:1262px){
+@media(max-width:1280px){
     .wcsbottom{
         flex-wrap: wrap;
     }
@@ -499,9 +442,6 @@ footer p{
         margin-top: -60px;
         z-index: 100;
     }
-    #check:checked~.navlist .navicon{
-        /* border-bottom: 1px solid; */
-    }
     #check:checked~.navlist #navicons{
         padding-top: 80px;
         display: flex;
@@ -514,20 +454,10 @@ footer p{
         height: 100vh;
         justify-content: start;
         gap: 5%;
-        width: 25%;
-        /* margin-top: 30px; */
-        
+        width: 25%;  
     }
-
-    
-
-    /* #cart{
-        display: none;
-    } */
     .nav{
-      display: flex;
-      /* justify-content: space-evenly; */
-        
+      display: flex;  
     }
     .navicon{
         font-size: 12px;
@@ -573,13 +503,6 @@ footer p{
 .section5image img:hover,.section2image img:hover{
     width: 320px;
 }
-/* .section2image img{
-    width: 300px;
-    transition: width .7s;
-} */
-/* .section2image img:hover{
-    width: 320px;
-} */
 
 .section1 button:hover,.section2 button:hover,.section5 button:hover{
     background-color: white;
