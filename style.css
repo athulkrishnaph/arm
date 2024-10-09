@@ -106,7 +106,6 @@ a:hover{
 .section1{
     display: flex;
     flex-wrap: nowrap;
-    flex-wrap: nowrap;
     gap: 3%;
     align-items: center;
 }
@@ -415,8 +414,7 @@ footer p{
     }
     #navicons{
         display: none;
-        margin: 0%;
-        
+        margin: 0%; 
     }
     .icons3{
         margin-left: 35vw;
